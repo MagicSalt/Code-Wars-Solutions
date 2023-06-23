@@ -1,11 +1,3 @@
-function findAverage(array) {
-    let average = 0;
-    for (let i = 0; i < array.length; i++) {
-        average += array[i];
-    }
-    if ((average /= array.length)) {
-        return average;
-    } else {
-        return 0;
-    }
-}
+var find_average = (array) => {
+    return array.length === 0 ? 0 : array.reduce((acc, ind) => acc + ind, 0) / array.length;
+};
