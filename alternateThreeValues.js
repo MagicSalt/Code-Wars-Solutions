@@ -1,11 +1,10 @@
 function f(x, cc) {
-    if (x === cc.a) {
-        return cc.b;
-    } else if (x === cc.b) {
-        return cc.c;
-    } else if (x === cc.c) {
-        return cc.a;
-    } else {
-        return null;
+    switch (x) {
+        case cc.a:
+            return cc.b;
+        case cc.b:
+            return cc.c;
+        case cc.c:
+            return cc.a;
     }
 }
