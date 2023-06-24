@@ -1,10 +1,11 @@
 function f(x, cc) {
-    if (x < 0) {
-        return 0;
-    } else if (x > 0) {
-        return 1;
+    if (x === cc.a) {
+        return cc.b;
+    } else if (x === cc.b) {
+        return cc.c;
+    } else if (x === cc.c) {
+        return cc.a;
     } else {
-        return cc;
+        return null;
     }
-    return -1;
 }
